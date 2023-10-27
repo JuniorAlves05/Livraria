@@ -23,7 +23,7 @@ public class Categoria implements Serializable {
 	private String nome;
 	private String descricao;
 
-	@OneToMany (mappedBy ="Categoria") // Informa que uma categoria e pra varios livros
+	@OneToMany (mappedBy ="categoria") // Informa que uma categoria e pra varios livros
 	private List<Livro> livros = new ArrayList<>();
 
 	public Categoria() {
